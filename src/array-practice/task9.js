@@ -10,3 +10,13 @@
  * console.log(indexOfAll([1, 2, 3, 1, 2, 3], 1)); -> [0, 3]
  * console.log(indexOfAll([1, 2, 3], 4)); -> []
  */
+
+export default function indexOfAll(arr, val) {
+  const finArr = [];
+  for (let a = 0; a < arr.length; a++) {
+    if (arr[a] === val) {
+      finArr.push(a);
+    }
+  }
+  return finArr;
+}
